@@ -27,7 +27,7 @@ Once done, config it and then install this package.
 Via Composer
 
 ``` bash
-$ composer require irazasyed/jwt-auth-guard
+$ composer require zoran/jwt-auth-guard
 ```
 
 ### Add the Service Provider
