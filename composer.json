@@ -1,0 +1,22 @@
+{
+    "name": "wang/jwt-auth-guard",
+    "description": "jwt auth guard for laravel or lumen ,the version 5+",
+    "type": "metapackage",
+    "require": {
+        "php" : ">=7.0.0",
+        "illuminate/support": "~5.0"
+    },
+    "require_dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3",
+        "tymon/jwt-auth": "^0.5.12"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zoran Wong",
+            "email": "skyandsunning@163.com"
+        }
+    ]
+}
