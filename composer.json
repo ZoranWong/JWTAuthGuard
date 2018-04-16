@@ -4,7 +4,8 @@
     "type": "metapackage",
     "require": {
         "php" : ">=7.0.0",
-        "illuminate/support": "~5.0"
+        "illuminate/support": "~5.0",
+        "lokielse/omnipay-alipay": "^2.3"
     },
     "require_dev": {
         "phpunit/phpunit" : "4.*",
