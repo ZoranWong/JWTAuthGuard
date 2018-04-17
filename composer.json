@@ -16,10 +16,6 @@
             "Zoran\\JwtAuthGuard\\": "src"
         }
     },
-    "config": {
-        "sort-packages": true
-    },
-    "prefer-stable": true,
     "license": "MIT",
     "authors": [
         {
