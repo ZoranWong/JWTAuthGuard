@@ -20,7 +20,6 @@
         "sort-packages": true
     },
     "prefer-stable": true,
-    "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
         {
