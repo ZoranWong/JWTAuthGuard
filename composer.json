@@ -1,5 +1,5 @@
 {
-    "name": "zoran-wang/jwt-auth-guard",
+    "name": "ZoranWang/JWTAUTHGuard",
     "description": "jwt auth guard for laravel or lumen ,the version 5+",
     "type": "metapackage",
     "require": {
