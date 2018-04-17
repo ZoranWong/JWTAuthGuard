@@ -12,6 +12,11 @@
         "squizlabs/php_codesniffer": "~2.3",
         "tymon/jwt-auth": "^0.5.12"
     },
+    "autoload": {
+        "psr-4": {
+            "Zoran\\JWTAuthGuard\\": "src"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
