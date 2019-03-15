@@ -4,7 +4,7 @@
     "require": {
         "php" : ">=7.0.0",
         "illuminate/support": "~5.0",
-        "tymon/jwt-auth": "^0.5.12"
+        "tymon/jwt-auth": "^0.5"
     },
     "require_dev": {
         "phpunit/phpunit" : "4.*",
