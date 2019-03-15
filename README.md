@@ -1,9 +1,5 @@
 # JWT Auth Guard
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Total Downloads][ico-downloads]][link-downloads]
-
 > JWT Auth Guard is a Laravel & Lumen Package that lets you use `jwt` as your driver for authentication guard in your application.
 > 
 > The Guard uses `tymon/jwt-auth` package for authentication and token handling.
