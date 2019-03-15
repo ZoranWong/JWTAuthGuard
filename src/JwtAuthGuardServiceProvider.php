@@ -2,6 +2,7 @@
 
 namespace Zoran\JwtAuthGuard;
 
+use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 
 class JwtAuthGuardServiceProvider extends ServiceProvider
@@ -23,13 +24,17 @@ class JwtAuthGuardServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        app('auth')->extend('jwt-auth', function ($app, $name, array $config) {
+        app('auth')->provider('repository', function (Container $app, array $config) {
+            return new JWTAuthUserFromRepositoryProvider($app, $config, $app['hash']);
+        });
+
+        app('auth')->extend('jwt-auth', function (Container $app, string $name, array $config) {
             $guard = new JwtAuthGuard(
                 app('tymon.jwt.auth'),
                 app('auth')->createUserProvider($config['provider']),
                 $app['request']
             );
-
+            $app[$name] = $guard;
             app()->refresh('request', $guard, 'setRequest');
 
             return $guard;

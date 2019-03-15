@@ -71,6 +71,14 @@ Make sure you also set `provider` for the guard to communicate with your databas
         'driver' => 'eloquent',
         'model'  => App\User::class,
     ],
+    'users' => [
+        'driver' => 'database',
+        'table'  => 'users',
+    ],
+    'users' => [
+        'driver' => 'repository',
+        'repository'  => App\Repositories\UserEloquentRepository::class,
+    ],
 ],
 ```
 
@@ -241,48 +249,3 @@ Get Payload for the given token manually:
 ``` php
 $payload = Auth::setToken('TokenToGetPayload')->getPayload();
 ```
-
-## Change log
-
-Please see [CHANGELOG](.github/CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) and [CONDUCT](.github/CONDUCT.md) for details.
-
-Any issues, feedback, suggestions or questions please use issue tracker [here](https://github.com/irazasyed/jwt-auth-guard/issues).
-
-## Security
-
-If you discover any security related issues, please email syed+gh@lukonet.com instead of using the issue tracker.
-
-## Credits
-
-- [Syed Irfaq R.][link-author]
-- [All Contributors][link-contributors]
-
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/irazasyed/jwt-auth-guard.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/irazasyed/jwt-auth-guard/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/irazasyed/jwt-auth-guard.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/irazasyed/jwt-auth-guard.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/irazasyed/jwt-auth-guard.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/irazasyed/jwt-auth-guard
-[link-travis]: https://travis-ci.org/irazasyed/jwt-auth-guard
-[link-scrutinizer]: https://scrutinizer-ci.com/g/irazasyed/jwt-auth-guard/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/irazasyed/jwt-auth-guard
-[link-downloads]: https://packagist.org/packages/irazasyed/jwt-auth-guard
-[link-author]: https://github.com/irazasyed
-[link-contributors]: ../../contributors
