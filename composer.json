@@ -3,7 +3,7 @@
     "description": "jwt auth guard for laravel or lumen ,the version 5+",
     "require": {
         "php" : ">=7.0.0",
-        "illuminate/support": "~5.0",
+        "illuminate/support": "^5.0",
         "tymon/jwt-auth": "^1.0||^1.0"
     },
     "require_dev": {
